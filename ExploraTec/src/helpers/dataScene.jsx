@@ -2,11 +2,12 @@ import insideOne from '../images/img2.png';
 import insideLibrary from '../images/img3.png';
 import insideTwo from '../images/img4.png';
 import insideGoScene from '../images/img5.png';
-import inside4B from '../images/img6.png';
+import insideMecanica from '../images/img6.png';
+import insideGamer from '../images/img7.png';
 
 const Scene = {
     insideOne: {
-        title: 'Interior 1',
+        title: 'Entrada',
         image: insideOne,
         pitch: -11,
         yaw: -3,
@@ -34,7 +35,7 @@ const Scene = {
         }
     },
     insideTwo:{
-        title:'Interior 2',
+        title:'Patio central',
         image:insideTwo,
         pitch: 10,
         yaw:180,
@@ -46,25 +47,32 @@ const Scene = {
                 cssClass: 'moveScene',
                 scene:'insideOne'
             },
-            Scene4B: {
+            SceneMecanica: {
                 type: 'custom',
-                pitch: 13,
-                yaw: -23,
+                pitch: 8,
+                yaw: -12,
                 cssClass: 'moveScene',
-                scene:'inside4B'
+                scene:'insideMecanica'
+            },
+            SceneGamer: {
+                type: 'custom',
+                pitch: 5,
+                yaw: 39,
+                cssClass: 'moveScene',
+                scene:'insideGamer'
             }
         }
     },
     insideLibrary:{
-        title:'Interior 3',
+        title:'Pabellon 2',
         image:insideLibrary,
         pitch: 10,
         yaw:180,
         hotSpots:{
             backScene: {
                 type: 'custom',
-                pitch: 1,
-                yaw: 77,
+                pitch: 11,
+                yaw: -11,
                 cssClass: 'moveScene',
                 scene:'insideOne'
             },
@@ -78,7 +86,7 @@ const Scene = {
         }
     },
     insideGoScene:{
-        title:'Interior 5',
+        title:'Biblioteca',
         image:insideGoScene,
         pitch: 10,
         yaw:180,
@@ -92,9 +100,9 @@ const Scene = {
             }
         }
     },
-    inside4B:{
-        title:'Interior 6',
-        image:inside4B,
+    insideMecanica:{
+        title:'Mecanica',
+        image:insideMecanica,
         pitch: 10,
         yaw:180,
         hotSpots:{
@@ -102,6 +110,21 @@ const Scene = {
                 type: 'custom',
                 pitch: -14,
                 yaw: 119,
+                cssClass: 'moveScene',
+                scene:'insideTwo'
+            }
+        }
+    },
+    insideGamer:{
+        title:'Pabellon 5',
+        image:insideGamer,
+        pitch: 10,
+        yaw:180,
+        hotSpots:{
+            backScene: {
+                type: 'custom',
+                pitch: 5,
+                yaw: -85,
                 cssClass: 'moveScene',
                 scene:'insideTwo'
             }
